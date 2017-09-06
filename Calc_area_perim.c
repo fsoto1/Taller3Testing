@@ -3,20 +3,19 @@
 int main()
 {
 
-  int  Area;
-  int Perimetro;
-  int Radio;
-  int Seleccion;
-  int Altura;
-  int Base;
-  int Lado1;
-  int Lado2;
-  int Lado3;
-  int Lado4;
-  int Diagonal_menor;
-  int Diagonal_mayor;
-  int Base_menor;
-  int Base_mayor;
+  float Radio = 0f;
+  float Seleccion = 0f;
+  float Altura = 0f;
+  float Base = 0f;
+  float Lado1 = 0f;
+  float Lado2 = 0f;
+  float Lado3 = 0f;
+  float Lado4 = 0f;
+  float Diagonal_menor = 0f;
+  float Diagonal_mayor = 0f;
+  float Base_menor = 0f;
+  float Base_mayor = 0f;
+
 	printf("-----------CALCULADORA DE AREA Y PERIMETRO-----------\n");
 	printf("Seleccione el numero de la figura geometrica con la que desea interactuar \n\n\n");
 	printf("1) Triangulo\n");
@@ -43,11 +42,8 @@ int main()
           scanf("%d", &Lado2);
           printf("\n inserte Lado3: ");
           scanf("%d" ,&Lado3); 
-          
-          Area= (Base * Altura)/2;
-          Perimetro = Lado1 + Lado2 + Lado3;
-          printf("\n Area = %d \n", Area );
-          printf("\n Perimetro = %d \n", Perimetro );
+          printf("\n Area = %d \n", (Base * Altura)/2 );
+          printf("\n Perimetro = %d \n", Lado1 + Lado2 + Lado3 );
                  break;
 
 
@@ -56,10 +52,8 @@ int main()
           printf(" inserte Lado1: ");
           scanf("%d" ,&Lado1);
           printf("\n");
-          Area = Lado1*2;
-          Perimetro = Lado1 * 4;
-          printf("\n Area = %d\n", Area );
-          printf("Perimetro = %d\n", Perimetro );
+          printf("\n Area = %d\n", Lado1*2 );
+          printf("Perimetro = %d\n", Lado1 * 4 );
                  break;  
 				 
 				   
@@ -69,10 +63,9 @@ int main()
           scanf("%d", &Base);
           printf("\n inserte Altura: ");
           scanf("%d", &Altura);         
-          Area = Base * Altura;
-          Perimetro =(Base * 2) + (Altura * 2);
-          printf("\n Area = %d\n", Area );
-          printf("Perimetro = %d\n", Perimetro );
+
+          printf("\n Area = %d\n", Base * Altura );
+          printf("Perimetro = %d\n", (Base * 2) + (Altura * 2) );
                  break;
 
 
@@ -85,11 +78,9 @@ int main()
           scanf("%d", &Lado1);
           printf("\n ingrese diagonal mayor: \n");
           scanf("%d", &Lado1);
-          
-          Area = (Diagonal_mayor * Diagonal_menor) /2;
-          Perimetro = Lado1 * 4;
-          printf("\n Area = %d\n", Area );
-          printf("Perimetro = %d\n", Perimetro );
+
+          printf("\n Area = %d\n", (Diagonal_mayor * Diagonal_menor) /2 );
+          printf("Perimetro = %d\n", Lado1 * 4 );
                  break;
                  
                  
@@ -100,11 +91,8 @@ int main()
           scanf("%d", &Base);
           printf("\n inserte Altura: ");
           scanf("%d", &Altura); 
-		          
-          Area = Base * Altura;
-          Perimetro =(Base * 2) + (Altura * 2);
-          printf("\n Area = %d\n", Area );
-          printf("Perimetro = %d\n", Perimetro );
+          printf("\n Area = %d\n", Base * Altura );
+          printf("Perimetro = %d\n", (Base * 2) + (Altura * 2) );
                  break;
                  
                  
@@ -125,11 +113,9 @@ int main()
           scanf("%d", &Base_mayor);
           printf("\n inserte Altura: ");
           scanf("%d", &Altura);
-          
-          Area = (Altura * (Base_mayor * Base_menor)) / 2;
-          Perimetro = Lado1 + Lado2 + Lado3 + Lado4;
-          printf("\n Area = %d\n", Area );
-          printf("Perimetro = %d\n", Perimetro );
+
+          printf("\n Area = %d\n", (Altura * (Base_mayor * Base_menor)) / 2 );
+          printf("Perimetro = %d\n", Lado1 + Lado2 + Lado3 + Lado4 );
                  break;
                  
                  
@@ -138,11 +124,9 @@ int main()
           printf("ha seleccionado Circulo\n");
           printf(" inserte Radio: ");
           scanf("%d", &Radio);
-          
-          Area = 3.1416 * (Radio * Radio);
-          Perimetro = 2 * 3.1416 * Radio;
-          printf("\n Area = %d\n", Area );
-          printf("Perimetro = %d\n", Perimetro );
+
+          printf("\n Area = %d\n", 3.1416f * (Radio * Radio) );
+          printf("Perimetro = %d\n", 2 * 3.1416f * Radio );
                  break;
                  
           default:

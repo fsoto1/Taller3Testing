@@ -3,19 +3,19 @@
 int main()
 {
 
-  float Radio = 0f;
-  float Seleccion = 0f;
-  float Altura = 0f;
-  float Base = 0f;
-  float Lado1 = 0f;
-  float Lado2 = 0f;
-  float Lado3 = 0f;
-  float Lado4 = 0f;
-  float Diagonal_menor = 0f;
-  float Diagonal_mayor = 0f;
-  float Base_menor = 0f;
-  float Base_mayor = 0f;
-
+  int Radio = 0;
+  int Seleccion = 0;
+  int Altura = 0;
+  int Base = 0;
+  int Lado1 = 0;
+  int Lado2 = 0;
+  int Lado3 = 0;
+  int Lado4 = 0;
+  int Diagonal_menor = 0;
+  int Diagonal_mayor = 0;
+  int Base_menor = 0;
+  int Base_mayor = 0;
+  
 	printf("-----------CALCULADORA DE AREA Y PERIMETRO-----------\n");
 	printf("Seleccione el numero de la figura geometrica con la que desea interactuar \n\n\n");
 	printf("1) Triangulo\n");
@@ -125,8 +125,8 @@ int main()
           printf(" inserte Radio: ");
           scanf("%d", &Radio);
 
-          printf("\n Area = %d\n", 3.1416f * (Radio * Radio) );
-          printf("Perimetro = %d\n", 2 * 3.1416f * Radio );
+          printf("\n Area = %d\n", 3.1416 * (Radio * Radio) );
+          printf("Perimetro = %d\n", 2 * 3.1416 * Radio );
                  break;
                  
           default:

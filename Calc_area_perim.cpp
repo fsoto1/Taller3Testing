@@ -1,15 +1,22 @@
 #include <stdio.h>
 
-
-
-
-
 int main()
 {
 
-int Area, Perimetro , Seleccion , Radio , Base , Altura , Lado1 , Lado2 , Lado3 , Lado4 , Diagonal_menor , Diagonal_mayor , Base_menor , Base_mayor ;
-
-
+  int  Area;
+  int Perimetro;
+  int Radio;
+  int Seleccion;
+  int Altura;
+  int Base;
+  int Lado1;
+  int Lado2;
+  int Lado3;
+  int Lado4;
+  int Diagonal_menor;
+  int Diagonal_mayor;
+  int Base_menor;
+  int Base_mayor;
 	printf("-----------CALCULADORA DE AREA Y PERIMETRO-----------\n");
 	printf("Seleccione el numero de la figura geometrica con la que desea interactuar \n\n\n");
 	printf("1) Triangulo\n");
@@ -138,7 +145,8 @@ int Area, Perimetro , Seleccion , Radio , Base , Altura , Lado1 , Lado2 , Lado3 
           printf("Perimetro = %d\n", Perimetro );
                  break;
                  
-                 
+          default:
+               printf("error");  
                  
     }
 

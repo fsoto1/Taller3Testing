@@ -1,33 +1,12 @@
 #include <stdio.h>
 
-int main()
-{
-
-  int Radio = 0;
-  int Seleccion = 0;
-  int Altura = 0;
-  int Base = 0;
-  int Lado1 = 0;
-  int Lado2 = 0;
-  int Lado3 = 0;
-  int Lado4 = 0;
-  int Diagonal_menor = 0;
-  int Diagonal_mayor = 0;
-  int Base_menor = 0;
-  int Base_mayor = 0;
-  
-	printf("-----------CALCULADORA DE AREA Y PERIMETRO-----------\n");
+int main(){
+  int Radio, Seleccion, Altura, Base, Lado1, Lado2, Lado3, Lado4, Diagonal_menor, Diagonal_mayor, Base_menor, Base_mayor; 
+  Radio   = Seleccion   = Altura   = Base   = Lado1   = Lado2   = Lado3   = Lado4   = Diagonal_menor   = Diagonal_mayor   = Base_menor   = Base_mayor = 0; 	
+  printf("-----------CALCULADORA DE AREA Y PERIMETRO-----------\n");
 	printf("Seleccione el numero de la figura geometrica con la que desea interactuar \n\n\n");
-	printf("1) Triangulo\n");
-	printf("2) Cuadrado\n");
-	printf("3) Rectangulo\n");
-	printf("4) Rombo\n");
-	printf("5) Romboide\n");
-	printf("6) Trapecio\n");
-	printf("7) Circulo\n");
-
-    scanf("%s", &Seleccion);
-
+	printf("1) Triangulo\n 2) Cuadrado\n 3) Rectangulo 4) Rombo 5) Romboide 6) Trapecio 7) Circulo\n");
+  scanf("%s", &Seleccion);
     switch (Seleccion)
     {
           case '1':
@@ -45,8 +24,6 @@ int main()
           printf("\n Area = %d \n", (Base * Altura)/2 );
           printf("\n Perimetro = %d \n", Lado1 + Lado2 + Lado3 );
                  break;
-
-
           case '2':
           printf("\n ha seleccionado Cuadrado\n");
           printf(" inserte Lado1: ");
@@ -55,8 +32,6 @@ int main()
           printf("\n Area = %d\n", Lado1*2 );
           printf("Perimetro = %d\n", Lado1 * 4 );
                  break;  
-				 
-				   
           case '3':
           printf("\n ha seleccionado Rectangulo\n");
           printf(" inserte Base: ");
@@ -67,9 +42,6 @@ int main()
           printf("\n Area = %d\n", Base * Altura );
           printf("Perimetro = %d\n", (Base * 2) + (Altura * 2) );
                  break;
-
-
-
           case '4':
           printf("ha seleccionado Rombo\n");
           printf(" ingrese Lado: \n");
@@ -81,10 +53,7 @@ int main()
 
           printf("\n Area = %d\n", (Diagonal_mayor * Diagonal_menor) /2 );
           printf("Perimetro = %d\n", Lado1 * 4 );
-                 break;
-                 
-                 
-                 
+                 break;      
           case '5':
           printf("ha seleccionado Romboide\n");
           printf(" inserte Base: ");
@@ -93,10 +62,7 @@ int main()
           scanf("%d", &Altura); 
           printf("\n Area = %d\n", Base * Altura );
           printf("Perimetro = %d\n", (Base * 2) + (Altura * 2) );
-                 break;
-                 
-                 
-                 
+                 break;      
           case '6':
           printf("ha seleccionado Trapecio\n");
           printf("\n inserte Lado1: ");
@@ -113,26 +79,18 @@ int main()
           scanf("%d", &Base_mayor);
           printf("\n inserte Altura: ");
           scanf("%d", &Altura);
-
           printf("\n Area = %d\n", (Altura * (Base_mayor * Base_menor)) / 2 );
           printf("Perimetro = %d\n", Lado1 + Lado2 + Lado3 + Lado4 );
-                 break;
-                 
-                 
-                 
+                 break; 
           case '7':
           printf("ha seleccionado Circulo\n");
           printf(" inserte Radio: ");
           scanf("%d", &Radio);
-
-          printf("\n Area = %d\n", 3.1416 * (Radio * Radio) );
-          printf("Perimetro = %d\n", 2 * 3.1416 * Radio );
+          printf("\n Area = %d\n", 3.1416 * ((float)Radio * (float)Radio) );
+          printf("Perimetro = %d\n", 2 * 3.1416 * (float)Radio );
                  break;
-                 
           default:
-               printf("error");  
-                 
+               printf("error");           
     }
-
 	return 0;
 }
